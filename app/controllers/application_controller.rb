@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   before_action :set_strava
 
   def hello
-    render html: ENV['STRAVA_ACCESS_TOKEN']
+    render html: 'Hello, ciclists!'
   end
 
   def strava
