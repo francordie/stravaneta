@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.4.0'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -12,6 +13,7 @@ gem 'sass-rails',   '~> 5.0'
 gem 'uglifier',     '>= 1.3.0'
 gem 'jquery-rails', '~> 4.2.2'
 gem 'turbolinks',   '~> 5'
+gem 'strava-api-v3'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -33,7 +35,9 @@ group :development do
   gem 'spring-watcher-listen',  '~> 2.0.0'
   gem 'rubocop',                '~> 0.47.1'
   gem 'byebug',                 '~> 9.0.6', platform: :mri
+  gem 'colorize'
+  gem 'dotenv-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+#gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

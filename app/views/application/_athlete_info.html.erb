@@ -1,0 +1,5 @@
+<p><%= image_tag @athlete['profile_medium'], size: 100 %></p>
+<p><b>Fullname</b>: <%= full_name_for(@athlete) %></p>
+<p><b>Username</b>: <%= @athlete['username'] %></p>
+<p><b>Created At</b>: <%= l Time.zone.parse(@athlete['created_at']), format: :short %></p>
+<p><b>Strava Profile</b>: <%= link_to 'URL', strava_url_for(@athlete), target: '_blank' %></p>

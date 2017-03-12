@@ -1,0 +1,6 @@
+<h2>My Info</h2>
+
+<%= render 'athlete_info' %>
+<p><b>Followers</b>: <%= @athlete['follower_count'] %></p>
+<p><b>Friends</b>: <%= friends_links(@athlete, @friends) %></p>
+<p><b>Email</b>: <%= @athlete['email'] %></p>
